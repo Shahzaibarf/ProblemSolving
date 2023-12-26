@@ -1,16 +1,9 @@
-function findMaxAndMinVal(arr){
-    var miniVal = arr[0];
-    var maxiVal = arr[0];
-    for (var i = 1; i < arr.length; i++) {
-        if(maxiVal  < arr[i+1]) {
-            maxiVal = arr[i+1]
-        } 
-         if(miniVal  > arr[i+1]) {
-            miniVal = arr[i+1]
-        } 
-        
+function reverseArray(arr){
+    var reverseArr = [];
+    for (var i = arr.length-1; i >= 0; i--) {
+        reverseArr.push(arr[i])
     }
-    return {"maxiVal": maxiVal,"miniVal": miniVal}
+    return reverseArr;
 }
 
-console.log(findMaxAndMinVal([1,10, 20, 15, 2, 23, 90, 67]));
+console.log(reverseArray([1,10, 20, 15, 2, 23, 90, 67]));
