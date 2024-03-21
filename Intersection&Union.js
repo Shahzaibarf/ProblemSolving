@@ -1,4 +1,4 @@
-function countIndexElement(arr1, arr2) {
+function IntersectionUnion(arr1, arr2) {
   var combineArr = [];
   var Intersection = [];
   combineArr.push(...arr1);
@@ -26,6 +26,6 @@ function removeDuplicates(arr) {
     return [...new Set(arr)];
 }
 
-console.log(countIndexElement([1, 3, 4, 5, 7],[2, 3, 5, 6]));
+console.log(IntersectionUnion([1, 3, 4, 5, 7],[2, 3, 5, 6]));
 
 
