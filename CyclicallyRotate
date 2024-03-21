@@ -1,0 +1,19 @@
+function cyclicallyRotate(arr) {
+    let swap;
+    let swap2;
+ for(let i = 0; i < arr.length; i++) {
+     if(i == 0) {
+         swap = arr[i];
+         arr[i] = arr[arr.length-1];
+     }else {
+         swap2 = arr[i];
+         arr[i] = swap;
+         swap = swap2;
+     }
+ }
+    return arr;
+}
+
+console.log(cyclicallyRotate([1, 2, 3, 4, 5]));
+
+
