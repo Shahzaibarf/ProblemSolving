@@ -1,9 +1,18 @@
-function reverseArray(arr){
-    var reverseArr = [];
-    for (var i = arr.length-1; i >= 0; i--) {
-        reverseArr.push(arr[i])
+function findMaxAndMinVal(arr) {
+    let max = arr[0];
+    let min = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+
+        if (arr[i] < min) {
+            min = arr[i];
+        }
     }
-    return reverseArr;
+
+    return { max, min };
 }
 
-console.log(reverseArray([1,10, 20, 15, 2, 23, 90, 67]));
+console.log(findMaxAndMinVal([10, 5, 20, 2, 15]));
